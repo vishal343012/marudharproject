@@ -3,7 +3,8 @@ phases:
   pre_build:
     commands:
       #installs dependencies into the node_modules/ directory
-      - npm install --force
+      - npm cache clean --force
+      - npm install --force > npm_install_log.txt 2>&1 || cat npm_install_log.txt
   build:
     commands:
       - echo Build started on `date`
