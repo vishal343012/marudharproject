@@ -10,12 +10,12 @@
     "dev": "nodemon start"
   },
   "author": "",
-  "browserslist": [
+   "browserslist":
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
+   ],
   "dependencies": {
     "@babel/eslint-parser": "^7.19.1",
     "aws-sdk": "^2.820.0",
@@ -42,7 +42,19 @@
     "multer": "^1.4.2",
     "multer-s3": "^2.9.0",
     "node-cron": "^3.0.1",
-    "nodemailer": "^6.6.0"
-  }
+    "nodemailer": "^6.6.0",
+    "nodemon": "^2.0.12",
+    "path": "^0.12.7",
+    "pdf-creator-node": "^2.3.4",
+    "promise": "^8.1.0",
+    "puppeteer": "^14.3.0",
+    "request-promise": "^4.2.6",
+    "stripe": "^14.3.0",
+    "tedious": "^11.0.3"
+  },
+  
+  "devDependencies": {
+    "serverless-offline": "^6.8.0"
+  },
+  "keywords": []
 }
-
