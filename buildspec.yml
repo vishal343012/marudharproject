@@ -1,21 +1,9 @@
-version: 0.2
-phases:
-  pre_build:
-    commands:
-      #installs dependencies into the node_modules/ directory
-      - npm cache clean --force
-      - npm install --force > npm_install_log.txt 2>&1 || cat npm_install_log.txt
-  build:
-    commands:
-      - echo Build started on `date`
-      - echo Compiling
-      - npm run build
-  post_build:
-    commands:
-      - echo Build completed on `date`
-# Include only the files required for your application to run.
-artifacts:
-  files:
-    - build/**/*
-  discard-paths: no
-  
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html/node_dev/
+    overwrite: true
+  # - source: /
+  #   destination: /var/www/html/node_beta/
+  #   overwrite: true
